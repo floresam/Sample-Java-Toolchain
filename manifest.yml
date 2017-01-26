@@ -1,4 +1,10 @@
 applications:
-- name: node-hello-world
-  memory: 128M
-  buildpack: sdk-for-nodejs
+- path: JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Floresam Sample Java App
+  host: Floresam-Sample-Java-App
+  disk_quota: 1024M
+  services:
+  - Floresam Sample Java App-cloudantNoSQLDB
